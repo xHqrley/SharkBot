@@ -28,4 +28,11 @@ def get(search):
     for item in items:
         if item.id == search:
             return item
-    raise SharkErrors.ItemNotFoundError
+    raise SharkErrors.ItemNotFoundError(search)
+
+def search(search):
+    search = search.lower()
+    for item in items:
+        if search == item.name.lower() or search == item.id.lower():
+            return item
+    raise SharkErrors.ItemNotFoundError(search)
