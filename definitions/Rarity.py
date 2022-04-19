@@ -17,3 +17,9 @@ mythic = Rarity("Mythic", 0xe74c3c, "mythic_item", 500)
 
 rarities = [common, uncommon, rare, legendary, exotic, mythic]
 
+def get(search):
+    search = search.capitalize()
+    for rarity in rarities:
+        if rarity.name == search:
+            return rarity
+    raise SharkErrors.RarityNotFoundError(search)
