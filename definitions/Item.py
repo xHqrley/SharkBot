@@ -20,3 +20,12 @@ class Item():
             embed.set_thumbnail(url=self.imageUrl)
 
         return embed
+
+items = []
+
+def get(search):
+    search = search.upper()
+    for item in items:
+        if item.id == search:
+            return item
+    raise SharkErrors.ItemNotFoundError
