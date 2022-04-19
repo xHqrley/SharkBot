@@ -14,3 +14,6 @@ rare = Rarity("Rare", 0x6fa8dc, "rare_item", 20)
 legendary = Rarity("Legendary", 0x71368a, "legendary_item", 50)
 exotic = Rarity("Exotic", 0xf1c40f, "exotic_item", 150)
 mythic = Rarity("Mythic", 0xe74c3c, "mythic_item", 500)
+
+rarities = [common, uncommon, rare, legendary, exotic, mythic]
+
