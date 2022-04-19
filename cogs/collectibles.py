@@ -4,7 +4,7 @@ import discord, random
 from cogs import economy
 from datetime import datetime, timedelta
 from discord.ext import tasks, commands
-from definitions import Member, SharkErrors
+from definitions import Member, SharkErrors, Item, Rarity
 
 import secret
 if secret.testBot:
