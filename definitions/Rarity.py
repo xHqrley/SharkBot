@@ -2,11 +2,11 @@ from definitions import SharkErrors
 
 class Rarity():
     
-    def __init__(self, name, colour, sellPrice, iconName):
+    def __init__(self, name, colour, iconName, sellPrice):
         self.name = name
         self.colour = colour
-        self.sellPrice = sellPrice
         self.iconName = iconName
+        self.sellPrice = sellPrice
 
 common = Rarity("Common", 0x979c9f, "common_item", 5)
 uncommon = Rarity("Uncommon", "uncommon_item", 0x2ecc71, 10)
